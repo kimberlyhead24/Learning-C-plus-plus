@@ -23,7 +23,7 @@ int main () {
 
     // Modifying strings
     name = "Jane Smith";
-    std::cout << "Updated Name: " << std::endl;
+    std::cout << "Updated Name: " << name << std::endl;
 
     return 0;
 }
