@@ -9,7 +9,7 @@ int main() {
     std::cout << std::endl;
 
     // For loop with multiple statements in initialization
-    std::cout << "Coutning even numbers from 0 to 10:" << std::endl;
+    std::cout << "Counting even numbers from 0 to 10:" << std::endl;
     for (int j = 0, k = 10; j <= k; j+=2) {
         std::cout << j << " ";
     }
