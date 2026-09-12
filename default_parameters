@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+
+// Function with default parameters
+void greetUser(std::string name = "Guest", int age = 0) {
+    std::cout << "Hello, " << name << "!" << std::endl;
+
+    if (age > 0) {
+        std::cout << "You are " << age << " years old." << std::endl;
+    }
+}
+
+// Another example with default parameters for calculation
+double calculateArea(double length = 1.0, double width = 1.0) {
+    return length * width;
+}
+
+int main() {
+    // Call function with no arguments (uses default values)
+    greetUser();
+
+    // Call function with partial arguments
+    greetUser("Alice");
+
+    // Call function with all arguments
+    greetUser("Bob", 25);
+
+    // Demonstrate area calculation with default parameters
+    std::cout << "\nArea calculations:" << std::endl;
+
+    // Default area (1x1)
+    std::cout << "Default area: " << calculateArea() << std::endl;
+
+    // Area with one parameter
+    std::cout << "Area with length 5: " << calculateArea(5.0) << std::endl;
+
+    // Area with both parameters
+    std::cout << "Area with length 5 and width 3: " << calculateArea(5.0, 3.0) << std::endl;
+
+    return 0;
+}
